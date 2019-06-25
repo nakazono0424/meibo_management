@@ -1,0 +1,8 @@
+[package]
+name = "Directory_management"
+version = "0.1.0"
+authors = ["nakazono0424 <p77m9fjo@s.okayama-u.ac.jp>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "0.2.1"
