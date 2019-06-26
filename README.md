@@ -20,4 +20,4 @@
 
 ## 使用したライブラリ
 + lazy_static ( グローバル変数 )
-++ https://wasm.fastlylabs.com/docs/rust/lazy_static/index.html
+ + https://wasm.fastlylabs.com/docs/rust/lazy_static/index.html
