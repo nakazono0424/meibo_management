@@ -47,10 +47,15 @@ fn main() {
 fn parse_line(str: &String){
     let line = str.replace("\n", "\0").to_string();
     if line.starts_with("%") {
-        let cmd = &line.chars().nth(1).unwrap();
+        let v: Vec<&str> = line.splitn(2, ' ').collect();
+	if v[0].len() == 1 {
+            println!("Not command.");
+            return;
+	}
+        let cmd = &v[0].chars().nth(1).unwrap();
 	let mut param = String::new();
-	if line.len() > 2 {
-    	    param = line[3..].to_string();
+	if v.len() == 2 {
+    	    param = v[1].to_string();
 	} 
         exec_command(*cmd, &param);
     } else {
