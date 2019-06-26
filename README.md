@@ -17,3 +17,7 @@
 | %W file | fileへの書き出し |
 | %F word | 検索結果を表示 |
 | %S n | CSVのn番目の項目で整列 |
+
+## 使用したライブラリ
++ lazy_static ( グローバル変数 )
+++ https://wasm.fastlylabs.com/docs/rust/lazy_static/index.html
